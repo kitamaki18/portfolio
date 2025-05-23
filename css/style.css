@@ -492,7 +492,7 @@ Skills
   text-align: left;
 }
 .skills .skills-list dd .item .experience .year {
-  color: #fff;
+  color: #333;
   font-size: 12px;
   margin-left: 4px;
 }
