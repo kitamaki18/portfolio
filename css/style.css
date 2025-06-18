@@ -95,7 +95,6 @@ Header
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fafafa;
   padding: 0 40px;
   position: fixed;
   top: 0;
@@ -142,74 +141,68 @@ Fv
   line-height: 1.6;
   margin: 0 0 16px;
 }
-.fv .site-subtitle {
-  text-align: center;
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  margin: 0 0 32px 0;
-}
 
 /*-------------------------------------------
 Works
 -------------------------------------------*/
-.works {
+#works {
   margin-bottom: 240px;
 }
-.works .works-list {
+#works .works-list {
   margin-bottom: 160px;
 }
-.works .works-list li {
+#works .works-list li {
   margin-bottom: 80px;
 }
-.works .works-list li a {
+#works .works-list li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.works .works-list li:nth-child(even) a {
+#works .works-list li:nth-child(even) a {
   flex-direction: row-reverse;
 }
-.works .works-list li .img {
+#works .works-list li .img {
   width: 50%;
   max-width: 496px;
   box-shadow: 15px 15px 50px 5px #e1e1e1;
   overflow: hidden;
 }
-.works .works-list li .img img {
+#works .works-list li .img img {
   transition: transform 0.8s ease;
 }
-.works .works-list li a:hover {
+#works .works-list li a:hover {
   opacity: 0.7;
 }
-.works .works-list li a:hover .img img {
+#works .works-list li a:hover .img img {
   transform: scale(1.05);
 }
-.works .works-list li a:hover .hover-line::after {
+#works .works-list li a:hover .hover-line::after {
   transform: scale(1, 1);
 }
-.works .works-list li .text {
+#works .works-list li .text {
   width: 50%;
   padding: 0 8%;
 }
-.works .works-list li .text .works-title {
+#works .works-list li .text .works-title {
   font-size: 26px;
   font-weight: bold;
   letter-spacing: 0.1em;
   margin-bottom: 24px;
 }
-.works .works-list li .text .works-text {
+#works .works-list li .text .works-text {
   font-size: 14px;
   line-height: 1.8;
   margin-bottom: 24px;
   text-align: justify;
 }
-.works .works-list li .text .see-detail {
+#works .works-list li .text .see-detail {
   font-size: 12px;
   margin-right: 16px;
   text-align: right;
   position: relative;
 }
-.works .works-list li .text .see-detail::after {
+#works .works-list li .text .see-detail::after {
   content: "";
   width: 10px;
   height: 9px;
@@ -219,13 +212,16 @@ Works
   top: 4px;
   right: -16px;
 }
-.works .other-list {
+#works .other-list {
   font-size: 15px;
 }
-.works .other-list li {
+#works .other-list li {
   border-bottom: solid 1px #bebebe;
   padding: 48px 40px;
   line-height: 1.8;
+}
+#works .other-list li:first-child{
+  border-top: solid 1px #bebebe;
 }
 
 /*-------------------------------------------
@@ -241,7 +237,7 @@ Link list
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #dfdfdf;
+  background-color: #fff;
   border-top: solid 1px #7f7f7f;
 }
 .link-list li:first-child {
@@ -466,6 +462,10 @@ Skills
   margin-bottom: 40px;
   text-align: justify;
 }
+.skills .service-list dd .text span{
+	display: block;
+	margin-top: 30px;
+}
 .skills .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -496,10 +496,10 @@ Skills
 }
 .skills .skills-list dd .item .experience {
   width: 50px;
-  text-align: right;
+  text-align: left;
 }
 .skills .skills-list dd .item .experience .year {
-  color: #707070;
+  color: #333;
   font-size: 12px;
   margin-left: 4px;
 }
@@ -539,6 +539,7 @@ About
   font-size: 14px;
   line-height: 2;
   text-align: justify;
+  margin-bottom: 30px;
 }
 .about .office-list {
   margin-bottom: 160px;
@@ -568,6 +569,7 @@ Footer
   align-items: center;
   font-size: 12px;
   padding: 40px;
+  background-color: #fff;
 }
 #footer .footer-link {
   display: flex;
@@ -576,26 +578,15 @@ Footer
 }
 
 #footer .footer-link a:hover {
-  opacity: 0.7;
+	opacity: 0.7;
 }
 #footer .footer-link .menu {
   display: flex;
   align-items: center;
-  border-right: solid 1px #333;
   padding-right: 24px;
 }
 #footer .footer-link .menu li {
   margin-left: 40px;
-}
-#footer .footer-link .sns {
-  display: flex;
-  align-items: center;
-}
-#footer .footer-link .sns li {
-  margin-left: 24px;
-}
-#footer .footer-link .sns img {
-  width: 16px;
 }
 
 /*-------------------------------------------
@@ -700,39 +691,40 @@ SP
   /*-------------------------------------------
   Works
   -------------------------------------------*/
-  .works {
+  #works {
     margin-bottom: 80px;
   }
-  .works .works-list {
+  #works .works-list {
     margin-bottom: 80px;
   }
-  .works .works-list li {
+  #works .works-list li {
     margin-bottom: 64px;
   }
-  .works .works-list li a {
+  #works .works-list li a {
     flex-direction: column;
   }
-  .works .works-list li:nth-child(even) a {
+  #works .works-list li:nth-child(even) a {
     flex-direction: column;
   }
-  .works .works-list li .img {
+  #works .works-list li .img {
     width: 100%;
     max-width: 100%;
     margin-bottom: 32px;
   }
-  .works .works-list li .text {
+  #works .works-list li .text {
     width: 100%;
     padding: 0;
-  }.works .works-list li .text .works-title {
+  }
+  #works .works-list li .text .works-title {
     font-size: 22px;
   }
-  .works .other-list {
+  #works .other-list {
     font-size: 14px;
   }
-  .works .other-list li {
+  #works .other-list li {
     padding: 32px 0;
   }
-  .works .other-list li:first-child {
+  #works .other-list li:first-child {
     padding-top: 0;
   }
 
