@@ -48,12 +48,12 @@ a:hover {
   top: -3px;
 }
 .section-title .text::before {
-  background-image: url(../img/icon-tree-l.png);
+  background-image: url(../img/icon-tree-l.webp);
   background-size: contain;
   left: -60px;
 }
 .section-title .text::after {
-  background-image: url(../img/icon-tree-r.png);
+  background-image: url(../img/icon-tree-r.webp);
   background-size: contain;
   right: -60px;
 }
@@ -256,7 +256,7 @@ Parallax
 -------------------------------------------*/
 .parallax {
   height: 600px;
-  background-image: url(../img/parallax.jpg);
+  background-image: url(../img/parallax.webp);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
