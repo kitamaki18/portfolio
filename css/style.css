@@ -298,6 +298,9 @@ main {
           box-shadow: 15px 15px 50px 5px #e1e1e1;
   overflow: hidden;
 }
+#works .works-list li .img picture {
+  display: block;
+}
 #works .works-list li .img img {
   -webkit-transition: -webkit-transform 0.8s ease;
   transition: -webkit-transform 0.8s ease;
@@ -397,9 +400,6 @@ main {
   }
   #works .other-list li {
     padding: 32px 0;
-  }
-  #works .other-list li:first-child {
-    padding-top: 0;
   }
 }
 
