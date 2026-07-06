@@ -302,6 +302,8 @@ main {
   display: block;
 }
 #works .works-list li .img img {
+  width: 100%;
+  height: auto;
   -webkit-transition: -webkit-transform 0.8s ease;
   transition: -webkit-transform 0.8s ease;
   transition: transform 0.8s ease;
